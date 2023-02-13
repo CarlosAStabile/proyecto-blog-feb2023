@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Establezco 1 rem == 10 px */
+html {
+    font-size: 62.5%;
+}
+
+/* TESTING EN BROWSER */
+h1 {
+    font-size: var(--lg);
+}
+
+/* Establezco la paleta de colores que será en disposición de TRIADA*/
+:root {
+    --pri-white: #F7F7F7;
+    --pri-black: #192825;
+    --pri-blue: #35588F;
+    --pri-red: #DE1B0D;
+    --pri-green: #6FD982;
+    --sm: 1.8rem;
+    --md: 2.2rem;
+    --lg: 2.8rem;
+
+}
