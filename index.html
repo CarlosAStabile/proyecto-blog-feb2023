@@ -6,18 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Esta página web es un blog personal de práctica de HTML5 y CSS3">
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
     <title>Blog Personal --febrero 2023--</title>
 </head>
 <body>
     <header>
-        <div>
-            <img src="" alt="Logotipo">
-            <h1>Hola esto es una pruebita.</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Quién soy</a></li>
-                    <li><a href="#">Propósito</a></li>
-                    <li><a href="#">Fuentes</a></li>
+        <div class="hd-ppal">
+            <img class="hd-ppal__logo" src="" alt="Logotipo">
+            <h1 class="hd-ppal__title">Proyecto nº1<br>Blog Personal</h1>
+            <nav class="hd-ppal__nav">
+                <ul class="hd-ppal__list">
+                    <li class="hd-ppal__item"><a class="hd-ppal__link" href="#">Quién soy</a></li>
+                    <li class="hd-ppal__item"><a class="hd-ppal__link" href="#">Propósito</a></li>
+                    <li class="hd-ppal__item"><a class="hd-ppal__link" href="#">Fuentes</a></li>
                 </ul>
             </nav>
         </div>
@@ -25,7 +28,18 @@
     <main>
         <div>
             <aside>
-
+                <div>
+                    <label for="info">Más información</label>
+                    <input list="info" placeholder="Write it">
+                    <datalist id="info">
+                        <option value="Curriculum Vitae"></option>
+                        <option value="Que busco?"></option>
+                        <option value="Que quiero?"></option>
+                        <option value="Que hago?"></option>
+                        <option value="Sentido"></option>
+                    </datalist>
+                    <button>Elegiste</button>
+                </div>
             </aside>
             <section>
 
@@ -33,29 +47,22 @@
             <!-- Esta section será de fotos de mis vacaciones y servirá para practicar el uso de figure, figcaption con img -->
             <section>
                 <figure>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+                    <img src="" alt="Faro en La Paloma">
+                    <img src="" alt="Playa en La Pedrera">
+                    <img src="" alt="Aguila de Atlántida">
+                    <img src="" alt="Bahía de Piriapolis">
                     <figcaption>Estas imagenes son de mis vacaciones 2014.</figcaption>
                 </figure>
             </section>
         </div>
     </main>
     <footer>
-
-        <label for="info">Más información</label>
-        <input list="info" placeholder="Write it">
         <div>
-            <datalist id="info">
-                <option value="Curriculum Vitae"></option>
-                <option value="Que busco?"></option>
-                <option value="Que quiero?"></option>
-                <option value="Que hago?"></option>
-                <option value="Sentido"></option>
-            </datalist>
-            <button>Elegiste</button>
+            <p>
+                Aquí irá lo habitual de un pie de página.<br>
+                Tomar como referencia la página Web de NTN.
+            </p>
         </div>
-            
     </footer>
 </body>
 </html>

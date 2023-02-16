@@ -1,26 +1,91 @@
 * {
     box-sizing: border-box;
+    /* for now, voy a agregar las sgtes declaraciones:*/
+    margin: 0;
+    padding: 0;
 }
 
 /* Establezco 1 rem == 10 px */
-/* html {
+html {
     font-size: 62.5%;
-} */
-
-/* TESTING EN BROWSER */
-h1 {
-    font-size: var(--lg);
+}
+body {
+    font-size: var(--sm);
+    font-family: 'Barlow', sans-serif;
 }
 
 /* Establezco la paleta de colores que será en disposición de TRIADA*/
 :root {
     --pri-white: #F7F7F7;
-    --pri-black: #192825;
+    --pri-black: #0F0F0F;
     --pri-blue: #35588F;
     --pri-red: #DE1B0D;
     --pri-green: #6FD982;
+    --sec-black: #212121;
     --sm: 1.8rem;
     --md: 2.2rem;
     --lg: 2.8rem;
+}
 
+/* Ver en markdown WIP on day 16-02-23*/
+
+.hd-ppal {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    width: 95vw;
+    height: 25vh;
+    margin: 0 auto 0.8rem;
+    padding: 1.0rem;
+    background-color: var(--pri-green);
+    /* border: 0.1rem solid var(--pri-black); */
+    box-shadow: 0 0.2rem 0.6rem 0.1rem var(--pri-black);
+}
+.hd-ppal__logo {
+    /* display: flex; */
+    width: 30vw;
+    height: 20vh;
+    background-color: var(--pri-blue);
+}
+.hd-ppal__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height: 20vh;
+    color: var(--pri-white);
+    font-size: var(--lg);
+    background-color: var(--pri-blue);
+    border-radius: 1.2rem;
+}
+.hd-ppal__title:hover {
+    box-shadow: 0 0 1.6rem 0.8rem var(--pri-white);
+}
+.hd-ppal__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.0rem;
+    list-style: none;
+    width: 30vw;
+    height: 20vh;
+    background-color: var(--pri-blue);
+    border-radius: 1.2rem;
+}
+.hd-ppal__list:hover {
+    box-shadow: 0 0 1.6rem 0.8rem var(--pri-white);
+}
+.hd-ppal__item {
+    cursor: pointer;
+}
+.hd-ppal__link {
+    color: var(--pri-white);
+    text-decoration: none;
+    font-size: var(--md);
+}
+.hd-ppal__link:hover {
+    color: var(--pri-green);
+    font-size: var(--lg);
 }
