@@ -22,6 +22,8 @@ body {
     --pri-red: #DE1B0D;
     --pri-green: #6FD982;
     --sec-black: #212121;
+    --sec-blue: #C0CFF0;
+    --manz-grad: linear-gradient(#233, indigo);
     --sm: 1.8rem;
     --md: 2.2rem;
     --lg: 2.8rem;
@@ -32,13 +34,13 @@ body {
 .hd-ppal {
     display: flex;
     gap: 4rem;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 95vw;
-    height: 25vh;
+    height: 30vh;
     margin: 0 auto 0.8rem;
     padding: 1.0rem;
-    background-color: var(--pri-green);
+    background: var(--manz-grad);
     /* border: 0.1rem solid var(--pri-black); */
     box-shadow: 0 0.2rem 0.6rem 0.1rem var(--pri-black);
 }
@@ -46,36 +48,47 @@ body {
     /* display: flex; */
     width: 30vw;
     height: 20vh;
-    background-color: var(--pri-blue);
+    /* background-color: var(--pri-blue); */
+}
+.hd-ppal__container {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    height: 22vh;
+    justify-content: space-around;
+    gap: 1.8rem;
 }
 .hd-ppal__title {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30vw;
-    height: 20vh;
+    width: 70vw;
+    height: 45px;
     color: var(--pri-white);
     font-size: var(--lg);
-    background-color: var(--pri-blue);
+    background-color: var(--sec-black);
+    box-shadow: 0 0 1.0rem 0.2rem var(--pri-white);
+    opacity: 0.85;
     border-radius: 1.2rem;
 }
 .hd-ppal__title:hover {
-    box-shadow: 0 0 1.6rem 0.8rem var(--pri-white);
+    opacity: 1.0;
 }
 .hd-ppal__list {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     gap: 1.0rem;
     list-style: none;
-    width: 30vw;
-    height: 20vh;
-    background-color: var(--pri-blue);
+    width: 70vw;
+    height: 65px;
+    background-color: var(--sec-black);
+    box-shadow: 0 0 1.0rem 0.2rem var(--pri-white);
+    opacity: 0.85;
     border-radius: 1.2rem;
 }
 .hd-ppal__list:hover {
-    box-shadow: 0 0 1.6rem 0.8rem var(--pri-white);
+    opacity: 1.0;
 }
 .hd-ppal__item {
     cursor: pointer;
@@ -86,6 +99,26 @@ body {
     font-size: var(--md);
 }
 .hd-ppal__link:hover {
-    color: var(--pri-green);
-    font-size: var(--lg);
+    color: var(--sec-blue);
+    font-weight: bolder;
+}
+.hd-ppal__logo {
+    width: 150px;
+    height: 150px;
+    background-image: url('./assets/imgs/logo-jpg-200-200.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* border: 0.1rem solid var(--sec-black); */
+    border-radius: 1.2rem;
+    box-shadow: 0 0 1.0rem 0.2rem var(--pri-white);
+}
+
+/* Pruebo el linear-gradient del MANZ en el body*/
+.main-ppal {
+    width: 95vw;
+    height: 65vh;
+    margin: 0 auto 0.8rem;
+    background: linear-gradient(#233, indigo);
+    color: var(--pri-white);
 }
