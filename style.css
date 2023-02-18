@@ -5,15 +5,6 @@
     padding: 0;
 }
 
-/* Establezco 1 rem == 10 px */
-html {
-    font-size: 62.5%;
-}
-body {
-    font-size: var(--sm);
-    font-family: 'Barlow', sans-serif;
-}
-
 /* Establezco la paleta de colores que será en disposición de TRIADA*/
 :root {
     --pri-white: #F7F7F7;
@@ -27,6 +18,15 @@ body {
     --sm: 1.8rem;
     --md: 2.2rem;
     --lg: 2.8rem;
+}
+
+/* Establezco 1 rem == 10 px */
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: var(--sm);
+    font-family: 'Barlow', sans-serif;
 }
 
 /* Ver en markdown WIP on day 16-02-23*/
@@ -116,9 +116,80 @@ body {
 
 /* Pruebo el linear-gradient del MANZ en el body*/
 .main-ppal {
+    display: flex;
     width: 95vw;
     height: 65vh;
     margin: 0 auto 0.8rem;
     background: linear-gradient(#233, indigo);
+    box-shadow: 0 0.2rem 0.6rem 0.1rem var(--pri-black);
     color: var(--pri-white);
+}
+.aside__title {
+    display: inline-block;
+    width: 25vw;
+    height: 10vh;
+    min-width: 20rem;
+    margin-bottom: 1rem;
+    font-size: var(--lg);
+    text-align: center;
+    color: var(--pri-red);
+    background: var(--pri-white);
+}
+.main-ppal__aside {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    height: 55vh;
+    min-width: 20rem;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    color: var(--sec-black);
+    background: var(--sec-blue);
+}
+.aside__container {
+    display: inline-block;
+    width: 25vw;
+    height: 50vh;
+    min-width: 20rem;
+    text-align: center;
+    background: var(--sec-black);
+}
+.aside__tag {
+    display: inline-block;
+    width: 25vw;
+    height: 2.5rem;
+    min-width: 20rem;
+    font-size: var(--sm);
+    text-align: center;
+    background: var(--pri-green);
+}
+.aside__input {
+    display: inline-block;
+    width: 25vw;
+    height: 3.0rem;
+    min-width: 20rem;
+}
+
+.aside__info {
+    display: inline-block;
+    width: 25vw;
+    height: 3.0rem;
+    min-width: 20rem;
+    padding-top: 1.0rem;
+    padding-left: 1.0rem;
+    font-size: var(--sm);
+    text-align: start;
+    color: var(--sec-blue);
+}
+.aside__summary--p {
+    display: inline-block;
+    /* width: 25vw; */
+    /* height: 3.0rem; */
+    /* min-width: 20rem; */
+    padding: 0.2rem;
+    font-size: var(--sm);
+    text-align: center;
+    background-color: var(--pri-red);
+    box-shadow: 0 0 1.0rem 0.2rem var(--sec-black);
+    border-radius: 0.2rem;
 }

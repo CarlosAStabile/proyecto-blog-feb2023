@@ -20,7 +20,7 @@
                 </h1>
                 <nav class="hd-ppal__nav">
                     <ul class="hd-ppal__list">
-                        <li class="hd-ppal__item"><a class="hd-ppal__link" href="#">Quién soy</a></li>
+                        <li class="hd-ppal__item"><a class="hd-ppal__link" href="#" title="Carlos">Quién soy</a></li>
                         <li class="hd-ppal__item"><a class="hd-ppal__link" href="#">Propósito</a></li>
                         <li class="hd-ppal__item"><a class="hd-ppal__link" href="#">Fuentes</a></li>
                     </ul>
@@ -31,17 +31,25 @@
     <main>
         <div class="main-ppal">
             <aside>
-                <div>
-                    <label for="info">Más información</label>
-                    <input list="info" placeholder="Write it">
-                    <datalist id="info">
-                        <option value="Curriculum Vitae"></option>
-                        <option value="Que busco?"></option>
-                        <option value="Que quiero?"></option>
-                        <option value="Que hago?"></option>
-                        <option value="Sentido"></option>
-                    </datalist>
-                    <button>Elegiste</button>
+                <h2 class="aside__title">MAS INFORMACIÓN</h2>
+                <div class="main-ppal__aside">
+                    <div class="aside__container">
+                        <label class="aside__tag" for="info">Haz click y busca...</label>
+                        <input class="aside__input" list="info" placeholder="Write it">
+                        <datalist class="aside__datalist" id="info">
+                            <option value="Curriculum Vitae"></option>
+                            <option value="Que busco?"></option>
+                            <option value="Que quiero?"></option>
+                            <option value="Que hago?"></option>
+                            <option value="Sentido"></option>
+                        </datalist>
+                        <button class="aside__button">Elegiste</button>
+                        <details class="aside__info">
+                            <summary class="aside__summary">Un Bruto en Programación</summary>
+                            <p class="aside__summary--p">El nombre de una página web
+                            https://unbrutocondebian.blogspot.com fue la inspiración para UBenP.</p>
+                        </details>
+                    </div>
                 </div>
             </aside>
             <section>
