@@ -160,11 +160,12 @@ body {
     width: 25vw;
     height: 3.0rem;
     min-width: 20rem;
+    margin-top: 0.1rem;
     font-size: var(--sm);
     font-weight: bolder;
     text-align: center;
     color: var(--pri-blue);
-    background: var(--pri-white);
+    background: var(--pri-green);
 }
 .aside__input {
     display: inline-block;
@@ -232,55 +233,89 @@ body {
 }
 
 /* WIP in main and sections*/
-.section-one-ppal {
+.section-ppal {
     display: flex;
     flex-direction: column;
-    width: 95%;
+    width: 70vw;
+    /* width: 95%; */
     height: 100%;
     background: var(--sec-black);
 }
-.section-two-ppal {
+
+.section-one__title {
+    display: inline-block;
+    width: 100%;
+    height: 10vh;
+    min-width: 25rem;
+    /* margin-bottom: 1rem; */
+    font-size: var(--lg);
+    text-align: center;
+    color: var(--pri-blue);
+    background: var(--pri-white);
+    text-shadow: 0 0.2rem 0.6rem var(--sec-black);
+}
+.section-one {
+    display: flex;
+    row-gap: 3.0rem;
+    width: 100%;
+    height: 30%;
+}
+
+.section-two {
     display: grid;
     grid-template-areas:
         "a a"
-        "b c"
-        "b d";
-    grid-template-rows: repeat(3, minmax(15rem, 30rem));
-    grid-template-columns: repeat(2, minmax(15rem, 30rem));
-    width: 95vw;
-    height: 100%;
+        "d d"
+        "b c";
+    grid-template-rows: 20rem repeat(2, auto-fit);
+    width: 70vw;
+    min-height: 70rem;
+    /* height: 120rem; */
     background: var(--pri-blue);
 }
-.section-two-ppal__pic-a {
+.section-two .image-a {
     grid-area: a;
+    background-image: url(./assets/imgs/La-Pedrera-20140125.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background: red; */
 }
-.section-two-ppal__pic-a .image-a-one {
+/* .section-two-ppal__pic-a .image-a-one {
     width: 100px;
     height: 100px;
     object-fit: contain;
+} */
+
+.section-two .image-b {
+    grid-area: b;
+    background-image: url(./assets/imgs/El-Aguila-20140129.jpg);
+    background-size: cover;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    /* background: blue; */
+    /* width: 100%; */
+    /* height: 75%; */
 }
 
-.section-two-ppal__pic-b {
-    grid-area: b;
-}
-.section-two-ppal__pic-b .image-b-two {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-}
-.section-two-ppal__pic-c {
+.section-two .image-c {
     grid-area: c;
+    background-image: url(./assets/imgs/La-Paloma-20140125.jpg);
+    background-size: cover;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    /* background: green; */
+    /* width: 50%; */
+    /* height: 25%; */
 }
-.section-two-ppal__pic-c .image-c-three {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-}
-.section-two-ppal__pic-d {
+
+.section-two .image-d {
     grid-area: d;
-}
-.section-two-ppal__pic-d .image-d-four {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
+    background-image: url(./assets/imgs/Piriapolis-20140129.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background: grey; */
+    /* width: 50%; */
+    /* height: 25%; */
 }
