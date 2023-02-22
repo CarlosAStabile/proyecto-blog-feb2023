@@ -118,7 +118,7 @@ body {
 .main-ppal {
     display: flex;
     width: 95vw;
-    height: 75vh;
+    height: 120rem;
     margin: 0 auto 0.8rem;
     background: linear-gradient(#233, indigo);
     box-shadow: 0 0.2rem 0.6rem 0.1rem var(--pri-black);
@@ -237,8 +237,8 @@ body {
     display: flex;
     flex-direction: column;
     width: 70vw;
-    /* width: 95%; */
-    height: 100%;
+    min-width: 65rem;
+    height: 120rem;
     background: var(--sec-black);
 }
 
@@ -247,6 +247,7 @@ body {
     width: 100%;
     height: 10vh;
     min-width: 25rem;
+    padding-top: 1.5rem;
     /* margin-bottom: 1rem; */
     font-size: var(--lg);
     text-align: center;
@@ -256,66 +257,62 @@ body {
 }
 .section-one {
     display: flex;
-    row-gap: 3.0rem;
+    /* row-gap: 3.0rem; */
     width: 100%;
-    height: 30%;
+    height: 25vh;
+    gap: 2.0rem;
+    padding: 1.5rem;
 }
 
 .section-two {
     display: grid;
+    place-items: center;
     grid-template-areas:
         "a a"
-        "d d"
-        "b c";
-    grid-template-rows: 20rem repeat(2, auto-fit);
+        "b b"
+        "c d";
+    grid-template-rows: 20rem 40rem 30rem;
+    row-gap: 1.0rem;
     width: 70vw;
-    min-height: 70rem;
-    /* height: 120rem; */
-    background: var(--pri-blue);
+    height: 95rem;
+    /* background: var(--pri-blue); */
 }
-.section-two .image-a {
+
+.section-two .image-a-one {
+    display: block;
     grid-area: a;
-    background-image: url(./assets/imgs/La-Pedrera-20140125.jpg);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    /* background: red; */
+    min-width: 65rem;
+    max-width: 69vw;
+    height: 20rem;
+    object-fit: cover;
+    border: 0.3rem solid var(--sec-black);
 }
-/* .section-two-ppal__pic-a .image-a-one {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-} */
-
-.section-two .image-b {
+.section-two .image-b-two {
+    display: block;
     grid-area: b;
-    background-image: url(./assets/imgs/El-Aguila-20140129.jpg);
-    background-size: cover;
-    /* background-position: center; */
-    background-repeat: no-repeat;
-    /* background: blue; */
-    /* width: 100%; */
-    /* height: 75%; */
+    min-width: 65rem;
+    max-width: 69vw;
+    height: 40rem;
+    object-fit: cover;
+    border: 0.3rem solid var(--sec-black);
 }
-
-.section-two .image-c {
+.section-two .image-c-three {
+    display: block;
     grid-area: c;
-    background-image: url(./assets/imgs/La-Paloma-20140125.jpg);
-    background-size: cover;
-    /* background-position: center; */
-    background-repeat: no-repeat;
-    /* background: green; */
-    /* width: 50%; */
-    /* height: 25%; */
+    min-width: 30rem;
+    max-width: 35vw;
+    height: 30rem;
+    object-fit: contain;
+    border: 0.3rem solid var(--sec-black);
+}
+.section-two .image-d-four {
+    display: block;
+    grid-area: d;
+    min-width: 30rem;
+    max-width: 35vw;
+    height: 30rem;
+    object-fit: contain;
+    border: 0.3rem solid var(--sec-black);
 }
 
-.section-two .image-d {
-    grid-area: d;
-    background-image: url(./assets/imgs/Piriapolis-20140129.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    /* background: grey; */
-    /* width: 50%; */
-    /* height: 25%; */
-}
+/* Al Fin!! El footer*/
