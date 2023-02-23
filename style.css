@@ -15,9 +15,9 @@
     --sec-black: #212121;
     --sec-blue: #C0CFF0;
     --manz-grad: linear-gradient(#233, indigo);
-    --sm: 1.8rem;
-    --md: 2.2rem;
-    --lg: 2.8rem;
+    --sm: 1.6rem;
+    --md: 2.0rem;
+    --lg: 2.4rem;
 }
 
 /* Establezco 1 rem == 10 px */
@@ -316,3 +316,68 @@ body {
 }
 
 /* Al Fin!! El footer*/
+.footer-ppal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95vw;
+    min-width: 65rem;
+    height: 22rem;
+    margin: 0 auto 0.8rem;
+    background: var(--pri-green);
+    box-shadow: 0 0.2rem 0.6rem 0.1rem var(--pri-black);
+}
+.footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.0rem;
+    min-width: 100%;
+    height: 20rem;
+    background-color: var(--sec-blue);
+}
+.footer__img {
+    display: inline-block;
+    min-width: 15rem;
+    min-height: 15rem;
+    background-color: var(--pri-blue);
+    border: 0.1rem solid var(--sec-black);
+}
+.footer__p {
+    min-width: 50rem;
+    min-height: 15rem;
+    background-color: var(--pri-blue);
+    color: var(--sec-blue);
+    font-size: var(--sm);
+}
+.footer__social {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    min-width: 20rem;
+    min-height: 18rem;
+    background-color: var(--pri-black);
+}
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    width: 20rem;
+    height: 18rem;
+    list-style: none;
+}
+.footer__item {
+    cursor: pointer;
+}
+.footer__link {
+    text-decoration: none;
+    color: var(--sec-blue);
+    font-size: var(--md);
+}
+.footer__link:hover {
+    color: var(--pri-red);
+    font-weight: bolder;
+}
