@@ -38,3 +38,5 @@ No buscan "venderle" nada a nadie, así que... \
 ###### Escrito el lunes 13 de marzo de 2023
 ###### Revisado el viernes 17 de marzo de 2023
 > 💡 Idea! Pensar en local y en lo individual, comenzar a implementar `GIT FLOW` (_have a great Idea_)
+- Un pequeño _"problemita"_ local con un conflicto entre una modificación guardada en `stash` y un cambio guardado en este mismo `README` previo al mencionado `stash`, me dice: \
+**_SUBIDLO AHORA O NO LO VAS A SUBIR MAS NUNCA_**
