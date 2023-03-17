@@ -1,7 +1,7 @@
 # PROYECTO BLOG PERSONAL 📕🧠
 ## Brief resumido a posteriori acerca de este proyecto
 
-> "This is the way..."
+> "_This is the way..._"
 
 ### Fases
 
@@ -22,12 +22,12 @@
 - Se pretende en el transcurso del mes de marzo 2023, comenzar el proyecto `project-RDMF-blog` clonando el repositorio `proyecto-blog-feb2023`
 
 #### Lo correcto 🙄
-Debemos empezar por Mobile First, pero mi excusa es que primero debemos familiarizarnos con la codificación, tanto en HTML como en CSS, para poder realizar maquetaciones sencillas, que respeten SEO y que sirvan para afianzar conceptos propios del frontend.
+Debemos empezar por Mobile First, pero mi excusa es que primero debemos familiarizarnos con la codificación, tanto en HTML5 como en CSS3, para poder realizar maquetaciones sencillas, que respeten semántica y SEO, y que también sirvan para afianzar conceptos propios del frontend.
 
-Junto a esto, esta la familiarización total con `Git` y `GitHub`
+Junto a esto, esta la familiarización total con `GIT` y `GitHub`
 
 ###### Frase de los Simpsons
-> "Que puede malir sal?"
+> "_Que puede malir sal?_"
 
 ###### Don´t bother 
 **DISCLAIMER** \
@@ -36,3 +36,5 @@ No buscan "venderle" nada a nadie, así que... \
  **_Why read this?_**
 
 ###### Escrito el lunes 13 de marzo de 2023
+###### Revisado el viernes 17 de marzo de 2023
+> 💡 Idea! Pensar en local y en lo individual, comenzar a implementar `GIT FLOW` (_have a great Idea_)
